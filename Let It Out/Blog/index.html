@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/utils.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/mobile.css" />
+		<script src="app.js"></script> 
+		<title>Let It Out</title>
+	</head>
+	<body>
+		<nav class="navigation max-width-1 m-auto">
+			<div class="nav-left">
+				<a href="./">Let It Out</a>
+				<ul>
+					<li><a href="./">Home</a></li>
+					<li><a href="./about.html">About</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="nav-right">
+				<form action="./search.html" method="get">
+					<input
+						class="form-input"
+						type="text"
+						name="query"
+						id = "search-item"
+						placeholder="Article Search"
+						onkeyup="search()"
+					/>
+					<button class="btn">Search</button>
+				</form>
+			</div>
+		</nav>
+
+		<div class="content max-width-1 m-auto">
+			<div class="content-left">
+				<h1>All My Thoughts</h1>
+				<p>
+					This website is a product of love and labour, and my belief
+					that when all else ceases to exist, stories preserve.
+				</p>
+			</div>
+			<div class="content-right">
+				<!--<img src ="img/lady.svg" alt = "Garvika's Blog">-->
+			</div>
+		</div>
+
+		<div class="max-width-1 m-auto" , style="padding: 20px"></div>
+
+		<div class="home-articles max-width-1 m-auto" id="article-list">
+			<h2>Featured Articles</h2>
+			<div class="home-article">
+				<div class="home-article-image">
+					<img
+						src="img/pride.jpeg"
+						alt="article"
+						,
+						style="width: 300px; height: 200px"
+					/>
+				</div>
+
+				<div class="home-article-content">
+					<a href="./blogpost.html">
+						<h3>
+							Section 377 and a Colonial Legacy
+						</h3>
+					</a>
+					<span>Garvika Joshi</span>
+					<span>Date</span>
+					<span>6 min read</span>
+				</div>
+			</div>
+
+			<div class="home-article">
+				<div class="home-article-image">
+					<img
+						src="img/bgg.jpg"
+						alt="article"
+						,
+						style="width: 300px; height: 200px"
+					/>
+				</div>
+
+				<div class="home-article-content">
+					<a href="./blogpost.html">
+						<h3>
+							What Veronica Lodge Taught Us About Feminism
+						</h3>
+					</a>
+					<span>Author Garvika Joshi</span>
+					<span>Date</span>
+					<span>6 min read</span>
+				</div>
+			</div>
+
+			<div class="home-article">
+				<div class="home-article-image">
+					<img
+						src="img/home.jpg"
+						alt="article"
+						,
+						style="width: 300px; height: 200px"
+					/>
+				</div>
+
+				<div class="home-article-content">
+					<a href="./blogpost.html">
+						<h3>
+							LoFi and Women In Stem(Me) 
+						</h3>
+					</a>
+					<span>Garvika Joshi</span>
+					<span>Date</span>
+					<span>6 min read</span>
+				</div>
+			</div>
+
+			<div class="home-article">
+				<div class="home-article-image">
+					<img
+						src="img/pride.jpeg"
+						alt="article"
+						,
+						style="width: 300px; height: 200px"
+					/>
+				</div>
+
+				<div class="home-article-content">
+					<a href="./blogpost.html">
+						<h3>
+							Hope, Love and Pride: India's Journey With LGBTQ+ Issues
+						</h3>
+					</a>
+					<span>Garvika Joshi</span>
+					<span>Date</span>
+					<span>6 min read</span>
+				</div>
+			</div>
+
+			<div class="home-article">
+				<div class="home-article-image">
+					<img
+						src="img/lady.svg"
+						alt="article"
+						,
+						style="width: 300px; height: 200px"
+					/>
+				</div>
+
+				<div class="home-article-content">
+					<a href="./blogpost.html">
+						<h3>
+							The Dichotomy of Femme Fatale
+						</h3>
+					</a>
+					<span>Garvika Joshi</span>
+					<span>Date</span>
+					<span>6 min read</span>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="footer max-width-2 m-auto"
+			style="margin-top: 20px; background-color: var(--main-bg-color)"
+		>
+			<p>Garvika Joshi</p>
+		</div>
+	</body>
+</html>

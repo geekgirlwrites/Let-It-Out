@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="mobile.css" />
+	<link rel="stylesheet" href="css/utils.css" />
+	<title>Search</title>
+</head>
+
+<body>
+	<nav class="navigation max-width-1 m-auto">
+		<div class="nav-left">
+			<a href="./">Let It Out</a>
+			<ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="nav-right">
+			<form action="./search.html" method="get">
+				<input class="form-input" type="text" name="query" placeholder="Article Search" />
+				<button class="btn">Search</button>
+			</form>
+		</div>
+	</nav>
+
+	<div class="max-width-1 m-auto" , style="padding: 20px"></div>
+
+	<div class="home-articles max-width-1 m-auto" id="article-list">
+		<h2>Featured Articles</h2>
+		<div class="home-article">
+			<div class="home-article-image">
+				<img src="img/pride.jpeg" alt="article" , style="width: 300px; height: 200px" />
+			</div>
+
+			<div class="home-article-content">
+				<a href="./blogpost.html">
+					<h3>
+						Section 377 and a Colonial Legacy
+					</h3>
+				</a>
+				<span>Garvika Joshi</span>
+				<span>Date</span>
+				<span>6 min read</span>
+			</div>
+		</div>
+
+		<div class="home-article">
+			<div class="home-article-image">
+				<img src="img/bgg.jpg" alt="article" , style="width: 300px; height: 200px" />
+			</div>
+
+			<div class="home-article-content">
+				<a href="./blogpost.html">
+					<h3>
+						What Veronica Lodge Taught Us About Feminism
+					</h3>
+				</a>
+				<span>Garvika Joshi</span>
+				<span>Date</span>
+				<span>6 min read</span>
+			</div>
+		</div>
+
+		<div class="home-article">
+			<div class="home-article-image">
+				<img src="img/home.jpg" alt="article" , style="width: 300px; height: 200px" />
+			</div>
+
+			<div class="home-article-content">
+				<a href="./blogpost.html">
+					<h3>
+						5 Reasons Why Dark Academia Asthetic Is Problematic
+					</h3>
+				</a>
+				<span>Garvika Joshi</span>
+				<span>Date</span>
+				<span>6 min read</span>
+			</div>
+		</div>
+
+		<div class="home-article">
+			<div class="home-article-image">
+				<img src="img/pride.jpeg" alt="article" , style="width: 300px; height: 200px" />
+			</div>
+
+			<div class="home-article-content">
+				<a href="./blogpost.html">
+					<h3>
+						Hope, Love and Pride: India's Journey With LGBTQ+ Issues
+					</h3>
+				</a>
+				<span>Garvika Joshi</span>
+				<span>Date</span>
+				<span>6 min read</span>
+			</div>
+		</div>
+
+		<div class="home-article">
+			<div class="home-article-image">
+				<img src="img/lady.svg" alt="article" , style="width: 300px; height: 200px" />
+			</div>
+
+			<div class="home-article-content">
+				<a href="./blogpost.html">
+					<h3>
+						The Dichotomy of Femme Fatale
+					</h3>
+				</a>
+				<span>Garvika Joshi</span>
+				<span>Date</span>
+				<span>6 min read</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer max-width-2 m-auto" style="margin-top: 20px; background-color: var(--main-bg-color)">
+		<p>Garvika Joshi</p>
+	</div>
+
+	<script>
+		let x = document.getElementsByClassName("home-article-content");
+		qery = document.URL.split("query=")[1];
+		qery = qery.replaceAll("+", " ");
+
+		for (let x = 0; x < document.getElementsByClassName("home-article").length;x++) {
+			let vlue = document.getElementsByClassName("home-article")[x].childNodes[3].childNodes[1].childNodes[1].textContent.replaceAll
+			("\t","").replaceAll("\n", "");
+
+			if (!vlue.toUpperCase().includes(qery.toUpperCase())) {
+				document.getElementsByClassName("home-article")[x].style.display = "none";
+				console.log(vlue.toUpperCase());
+			} else {
+				console.log(vlue);
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>
